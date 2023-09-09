@@ -3,27 +3,396 @@
   list-style: none;
   text-decoration: none;
   font-family: "Be Vietnam Pro", sans-serif;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
+nav {
+  width: 100%;
+}
+
+body {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  gap: 200px;
+}
+
+ul{
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+li{
+  float: left;
+  text-align: center;
+  width: 7em;
+}
+
+button{
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background-color: #8b48bf;
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  color: #FFF;
+  border-style: none;
+}
+
+@media screen and (min-width: 1440px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .button-header{
+    display: flex;
+    width: 7%;
+    height: 10%;
+    padding: 15px;
+  }
+  
+  .img-main {
+    padding-bottom: 100px;
+    justify-content: left;
+    width: 540px;
+    height: 461px;
+  }
+  
+  .section-main {
+    padding-top: 120px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:65%;
+    color: #232c50;
+    font-size: 28px;
+    font-style: normal;
+    font-family: 'Be Vietnam';
+    gap: 100px;
+  }
+  
+  .title-box{
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-top: 31px;
+  }
+  
+  .title-main{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 108%;
+  }
+  
+  .description-main{
+    color: #000;
+    text-align: right;
+    font-size: 13px;
+    line-height: 150%;
+    padding-top: 28px;
+  }
+  
+  .buttonmain{
+    align-self: flex-end;
+    padding-top: 12px;
+  }
+
+  .section-banner{
+    display: flex;
+    background-color: #8b48bf;
+    width: 100%;
+    padding: 40px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    color: #FFF;
+  }
+  .title-banner{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    width: 450px;
+    height: 88px;
+  }
+
+  .description-banner{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    width: 450px;
+    height: 88px;
+  }
+    /* aca tengo el problema  */
+  .box-article{
+    background-color: #fafafa;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-left: 40;
+  } 
+
+  
+  .article{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 553px;
+    height: 158px;
+  }
+  
+  .articles2{
+    display: flex;
+    gap: 40px;
+  }
+  
+  .article-title{
+    display: inline-flex;
+    font-size: 16px;
+    gap: 23px;
+  }
+  
+  
+  .num-article-title{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: #8b48bf;
+    font-style: normal;
+    color: #FFF;
+    border-style: none;
+    width: 10%;
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .players{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 80px;
+  }
+  
+  .player{
+    display: flex;
+    gap: 50px;
+  }
+  
+  .section-players{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 400px;
+    padding: 50px 0px;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+  }
+  
+  .pictureplayer{
+    border-radius: 50%;
+  }
+  
+  .button-player{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12%;
+  }
+  
+  .button-more{
+    display: flex;
+    border-radius: 50px;
+    background-color: #8b48bf;
+    font-style: normal;
+    color: #FFF;
+    border-style: none;
+    width: 8%;
+    padding: 10px;
+  }
+  
+  .section-banner2{
+    display: inline-flex;
+    background-color: #8b48bf;
+    width: 100%;
+    padding: 40px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 538px;
+    color: #FFF;
+  }
+  
+  .titlebanner2{
+    width: 393px;
+    height: 96px;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 640;
+    line-height: 119.6%; /* 47.84px */
+    letter-spacing: -0.2px;
+  }
+  
+  .button-banner{
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    color: #8b48bf;
+    width: 7%;
+    height: 20%;
+    padding: 1%;
+  }
+  
+  
+  .footer {
+    display: flex;
+    width: 100%;
+    padding: 2px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background: #1e1e26;
+  }
+  
+  .logo-footer{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    padding-right: 80%;
+    padding-top: 7%;
+  }
+  
+  .copyright {
+    display: flex;
+    padding-left: 73%;
+    color: #8c8c94;
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 30px;
+  }
+  
+  .form {
+    display: flex;
+    padding-top: 3%;
+    padding-left: 76%;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: stretch;
+  }
+  
+  .div-form {
+    display: flex;
+    width: 201px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+  
+  .input-inbox {
+    display: flex;
+    height: 30px;
+    padding: 10px;
+    align-items:flex-end;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 50px;
+    background: #fff;
+    border: none;
+  }
+  
+  .nav-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: auto;
+    height: 80px;
+    gap: 150px;
+    padding-bottom: 5px;
+  }
+  
+  .nav-section ul li a {
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .lista-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .list-icons {
+    display: flex;
+    padding-left: 70px;
+    padding-bottom: 20px;
+    width: 12%;
+  }
+  
+  .button {
+    display: flex;
+    width: 80px;
+    height: 5px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    border: none;
+    background: #8b48bf;
+    color: #FFF;
+  }
+}
 
 
 @media screen and (max-width: 1440px) {
   body {
-    max-width: 100%;
-    margin: 0;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden; 
-  }
-  body html {
-    overflow-x: hidden;
   }
   main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,6 +405,9 @@
     display: flex;
     padding-top: 40px;
     gap: 200px;
+  }
+  .nav-items {
+    display: none;
   }
   .section-main {
     padding-top: 65px;
@@ -83,19 +455,19 @@
     color: #fff;
   }
   .section-banner {
+    padding: 40px 5%;
     display: flex;
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    padding: 40px;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
     align-items: center;
     gap: 50px;
     background: #3cddf3;
-}
+  }
 
   .title-banner {
     align-items: center;
-    height: 88px;
+    height: auto;
     align-self: stretch;
     color: #fff;
     font-size: 36px;
@@ -111,7 +483,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 151.1%; /* 24.176px */
-    white-space: pre-line;
   }
   .box-article {
     padding-top: 50px;
@@ -165,6 +536,96 @@
     line-height: 156.6%; /* 25.523px */
     letter-spacing: -0.163px;
   }
+  .cards {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 82%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+    padding-bottom: 50px;
+  }
+
+  .more-cards {
+    display: none; /* Oculta los elementos inicialmente */
+  }
+
+  /* .button:focus + .card .more-cards {
+    display: block;
+} */
+
+  .title-cards {
+    padding-bottom: 50px;
+    color: #242e53;
+    font-size: 39.214px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 156.6%; /* 61.41px */
+    letter-spacing: -0.392px;
+  }
+  .img-card {
+    border-radius: 50%;
+  }
+  .card-text {
+    color: #b9b9c1;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 156.6%; /* 25.056px */
+  }
+  .button-more {
+    display: flex;
+    width: 134px;
+    height: 28px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #8b48bf;
+  }
+  .button-dark {
+    display: flex;
+    width: 134px;
+    height: 28px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #232c50;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+  .banner-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    background: #3cddf3;
+  }
+
+  .title-banner-2 {
+    padding: 40px 50px;
+    align-self: stretch;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 119.6%; /* 47.84px */
+    letter-spacing: -0.2px;
+  }
   .footer {
     display: flex;
     width: 100%;
@@ -207,6 +668,13 @@
     border-radius: 50px;
     background: #fff;
     border: none;
+  }
+  .text-button {
+    color: #fff;
+    font-size: 13.181px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
   .button {
     display: flex;
