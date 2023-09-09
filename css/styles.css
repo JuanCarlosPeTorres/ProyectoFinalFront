@@ -1,24 +1,27 @@
 * {
-  padding: 0px;
-  margin: 0px;
   box-sizing: content-box;
   list-style: none;
   text-decoration: none;
   font-family: "Be Vietnam Pro", sans-serif;
+  margin: 0; 
+  padding: 0; 
 }
 
-nav {
-  width: 100%;
-}
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1440px) {
   body {
-    width: auto;
+    max-width: 100%;
+    margin: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden; 
+  }
+  body html {
+    overflow-x: hidden;
   }
   main {
     display: flex;
@@ -81,15 +84,17 @@ nav {
   }
   .section-banner {
     display: flex;
-    width: 100%;
-    padding: 40px 30px;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    padding: 40px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
     background: #3cddf3;
-  }
+}
+
   .title-banner {
+    align-items: center;
     height: 88px;
     align-self: stretch;
     color: #fff;
@@ -99,11 +104,10 @@ nav {
     line-height: 114.6%; /* 41.256px */
   }
   .description-banner {
-    padding-top: 50px;
     height: 88px;
     align-self: stretch;
     color: #fff;
-    font-size: clamp(16px, 3vw, 30px);
+    font-size: clamp(16px, 2vw, 30px);
     font-style: normal;
     font-weight: 500;
     line-height: 151.1%; /* 24.176px */
